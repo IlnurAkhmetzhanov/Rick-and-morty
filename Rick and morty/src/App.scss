@@ -1,7 +1,13 @@
 .content{
 &-wrapper{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 8fr;
+  background-color: #fef8ff;
 }
 
 }

@@ -1,12 +1,19 @@
 import "./InformationBlock.scss"
 
-export const InformationBlock = (props: any) => {
+type InformationBlockType = {
+    icon: string,
+    name: string,
+    gender: string,
+    location: string,
+    episodeNumber: number,
+    species: string
+}
+export const InformationBlock = (props: InformationBlockType) => {
     return (
         <div className={"InformationBlock-wrapper"}>
             <div className={"InformationBlock-icon"}>
                 <img
                     src={props.icon}
-
                 />
             </div>
             <div className={"InformationBlock-personageName"}>
@@ -16,7 +23,8 @@ export const InformationBlock = (props: any) => {
                 <div>{props.gender}</div>
                 <div>{props.species}</div>
                 <div>{props.location}</div>
-                <div>number of episodes:{props.episodeNumber}</div>
+                <div>Number of episodes:{props.episodeNumber}</div>
+
             </div>
 
         </div>

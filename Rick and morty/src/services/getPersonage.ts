@@ -1,7 +1,7 @@
-export const getPersonages = async (name: string | null, status: string | null, gender: string | null) => {
+export const getPersonages = async (name: string | null, status: string | null, gender: string | null,currentPage:number|null) => {
     debugger
     try {
-        const rawResponse = await fetch(`https://rickandmortyapi.com/api/character/?name=${name}&${status ? `status=${status}` : ""}&${gender ? `gender=${gender}` : ""}
+        const rawResponse = await fetch(`https://rickandmortyapi.com/api/character/?${currentPage ? `page=${currentPage}` : ""}&name=${name}&${status ? `status=${status}` : ""}&${gender ? `gender=${gender}` : ""}
 `, {
             headers: {
                 'Content-Type': 'application/json',

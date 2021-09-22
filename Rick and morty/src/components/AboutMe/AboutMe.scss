@@ -1,0 +1,22 @@
+.AboutMe {
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 2% 10% 0 10%;
+  }
+
+  &-AboutMe {
+    line-height: 25px;
+  }
+
+  &-icon {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-text {
+    margin-left: 5%;
+  }
+}
